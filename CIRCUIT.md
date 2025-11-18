@@ -1,20 +1,16 @@
-# PCB Flow — Circuit Schematic
+# Pcb Design Master Pcb Design Using Ultiboard And Multisim — Circuit Notes
 
-- Course: PCB Design: Master PCB Design using Ultiboard and Multisim
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/multisim-ultiboard-pcb-design-pcbdesign-using-ultiboard-and-multisim/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Flow
+## Wiring Checklist
 
-- Schematic -> Netlist -> Layout -> Gerbers.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- Schematic -> Netlist -> Layout -> Gerber/Drill -> Fab
-```
-
-## Purchase With Discount
-
-Get a discounted price and streamline your PCB workflow — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
